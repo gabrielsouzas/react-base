@@ -12,7 +12,7 @@ function App() {
       <Header />
       <RoutesConfig />
       <GlobalStyle />
-      <ToastContainer />
+      <ToastContainer autoClose={3000} className="toast-container" />
     </BrowserRouter>
   );
 }
