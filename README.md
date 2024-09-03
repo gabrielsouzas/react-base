@@ -57,3 +57,19 @@ No arquivo `/routes/routes.js` ficam as rotas da aplicação:
   </Routes>
 </BrowserRouter>
 ```
+
+### Redux
+
+Redux é uma biblioteca para manipular os estados da aplicação globalmente, permitindo que uma variável fique visivel para quais páginas ou componentes sejam necessários, sem a necessidade da passagem via parâmetros.
+
+O método `createStore()` nessa aplicação está depreciado, o mais indicado é usar o `configStore()` do _Redux Toolkit_, mas para fins de aprendizado será utilizado o createStore();
+
+- useDispatch()
+
+  Hook para disparar ações para o redux, essas ações são simplesmente o que vai descrever para o redux o que vai ser disparado.
+
+  ```js
+  dispatch({
+    type: 'BOTAO_CLICADO',
+  });
+  ```

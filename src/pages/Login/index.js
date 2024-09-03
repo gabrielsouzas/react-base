@@ -1,4 +1,5 @@
 import React from 'react';
+// Disparador de eventos
 // import { useDispatch } from 'react-redux';
 
 import { Container } from '../../styles/GlobalStyles';
