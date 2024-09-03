@@ -62,6 +62,10 @@ No arquivo `/routes/routes.js` ficam as rotas da aplicação:
 
 Redux é uma biblioteca para manipular os estados da aplicação globalmente, permitindo que uma variável fique visivel para quais páginas ou componentes sejam necessários, sem a necessidade da passagem via parâmetros.
 
+Fluxo Redux:
+
+`AÇÃO -> REDUCER -> NEWSTATE || CURRENTSTATE`
+
 O método `createStore()` nessa aplicação está depreciado, o mais indicado é usar o `configStore()` do _Redux Toolkit_, mas para fins de aprendizado será utilizado o createStore();
 
 - useDispatch()
@@ -73,3 +77,7 @@ O método `createStore()` nessa aplicação está depreciado, o mais indicado é
     type: 'BOTAO_CLICADO',
   });
   ```
+
+- rootReducer.js
+
+  Sua função é combinar vários reducers
